@@ -7,7 +7,7 @@ from DQMServices.Core.DQMEDHarvester import DQMEDHarvester
 
 SiPixelPhase1SummaryOnline = DQMEDHarvester("SiPixelPhase1Summary",
     TopFolderName = cms.string('PixelPhase1/Phase1_MechanicalView/'),
-    RunOnEndLumi = cms.bool(True),
+    RunOnEndLumi = cms.bool(False),
     RunOnEndJob = cms.bool(True),
     # schedule this module to run *after* the QTests.
     inputGeneration = cms.untracked.string('DQMGenerationQTest'),
